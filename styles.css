@@ -1,0 +1,62 @@
+/*............hoja de estilos............*/
+
+*{
+    margin:0;
+    padding: 0; 
+    box-sizing:border-box; 
+
+body{
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h1{
+    width: 429px;
+    height: 127px;
+    text-align:left;
+    color: #20d4a1;
+    font-size: 40px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+
+
+
+section{  
+    margin-top: 100px;
+ }
+
+/*............seccion de antonhy............*/
+
+
+
+
+
+
+
+/*......madeleine.......*/
+
+
+
+
+/*......julia.......*/
+
+
+
+ 
+
+
+
+/*..............*/
+
+.container{
+    width: 963px;
+    /*height: 3098px;*/
+     border: solid red;
+    text-align: center;
+}
