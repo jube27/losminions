@@ -1,0 +1,41 @@
+
+
+
+
+.image-interactive {
+position: relative;
+left: 380px;
+top: 100px;
+cursor: pointer;
+}
+
+.image-interactive:hover{
+    transform: scale(1.1);
+}
+
+.cuadro {
+    width: 350px;
+    height: 280px;
+    background-color: #ffff;
+    position: relative;
+    border-radius: 15px;
+    left: 450px;
+    top: -380px;
+
+}
+
+.title {
+    font-family : "Josefine Sans", sans-serif;
+    font-size : 15px
+    Text-align: center;
+}
+
+.paragraf {
+    font-family:"Josefine Sans", sans-serif;
+    font-size: 10px
+    justify-content: space-between;
+    text-align: justify;
+}
+
+
+
