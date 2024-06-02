@@ -25,19 +25,58 @@ h1{
 }
 
 
-
-
 section{  
     margin-top: 100px;
- }
+ }    
+    
+/*......Antony.......*/
+header {
+    background: url(./image-hero.jpg) no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 15px 00px 80px 0px;
+}
 
-/*............seccion de antonhy............*/
+.top {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 80px;
+}
 
+.enterprise h1 {
+    margin: 0;
+}
 
+.nav-links {
+    list-style: none;
+    padding: 0;
+}
 
+.nav-links li {
+    display: inline;
+    margin: 0 10px;
+}
 
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
 
+.title1{
+    width: 300px;
+    margin: 80px;
+    margin-right: 500px;
+    border: 3px solid;
+}
 
+.title1 h2 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ; 
+    font-size: 2em;
+    margin-left: 30px;
+    text-align: left;
+    overflow: auto;
+}
 
 /*......madeleine.......*/
 
