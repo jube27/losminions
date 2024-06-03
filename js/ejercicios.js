@@ -65,14 +65,7 @@ if(operacion === "+"){
 
 /*  -----Ejercicio 3 --------*/ 
 
-3.-vamos a crear dos variables, una va ser string(nombre) 
-y la otra un numero [cantidad], el nombre de producto puede ser, 
-juntamente con su precio:
--refresco 1,00 soles
--cerveza 2.50 soles
--papitas 5.00 soles
-según la cantidad y el nombre del producto especificados, 
-vamos a tener que calcular el precio total del pedido.
+
 
 let nombre1="cerveza 2.50 soles";
 let nombre2="papitas 5.00 soles";
