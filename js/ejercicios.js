@@ -25,28 +25,22 @@ function bisiesto(ano) {
     const btncomprobar = document.getElementById("btncomprobar")
     let container =document.getElementById("container");
     let h2=document.querySelector("h2");
-
-    let h1 = document.createElement("h1");
-    let nh2 = document.createElement("h2")
-    nh2.textContent ="";
+    let p1 = document.createElement("p1");
 
     btncomprobar.addEventListener("click", function (event) {
         event.preventDefault()
-        h1.innerText = " ";
+        p1.innerText = " ";
         if(anio1.value)  {
             if (bisiesto(anio1.value)){
-                h1.innerText =anio1.value + " es un año bisiesto";
-                container.insertBefore(h1, h2);
-                //console.log(anio1.value, "es bisiesto ")
+                p1.innerText =anio1.value + " es un año bisiesto";
+                container.insertBefore(p1, h2);
             }else{
-                h1.innerText =anio1.value + " No es un año bisiesto ";
-                container.insertBefore(h1,h2);
-                //console.log(anio1.value, "no es bisiesto ")
+                p1.innerText =anio1.value + " No es un año bisiesto ";
+                container.insertBefore(p1,h2);
             }
         }else {
-            h1.innerText ="ingrese un año ";
-        }
-     
+            p1.innerText ="ingrese un año ";
+        }    
     })
 
 
@@ -89,6 +83,7 @@ if(operacion === "+"){
 
 /*  --------------------- Ejercicio 3 -------------------*/ 
 
+console.log(".....ejercicio 3 .......")
 
 let nombre1="cerveza 2.50 soles";
 let nombre2="papitas 5.00 soles";
