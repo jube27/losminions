@@ -1,0 +1,288 @@
+/*............hoja de estilos............*/
+
+*{
+    margin:0;
+    padding: 0; 
+    box-sizing:border-box; 
+}
+
+body{
+    background-color:white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+  width: 429px;
+  height: 127px;
+  text-align:left;
+  color: #20d4a1;
+  font-size: 40px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-align:left;
+    color:#58a478;
+}
+
+#container{
+  width: 1440px;
+  margin: 0px auto;
+  /*border: 1px solid red;*/
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 50px;
+}
+
+section{  
+    margin-top: 100px;
+ }
+
+
+/*..................Antony......................*/
+
+header {
+  background: url(../images/desktop/image-hero.jpg) no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 15px 00px 80px 0px;
+  
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 80px;
+}
+
+.enterprise h1 {
+  margin: 0;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.title1{
+  width: 300px;
+  margin: 80px;
+  margin-right: 500px;
+  border: 3px solid;
+}
+
+.title1 h2 {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ; 
+  font-size: 2em;
+  margin-left: 30px;
+  text-align: left;
+  overflow: auto;
+}
+
+/*........................madeleine......................*/
+
+.image-interactive {
+  position: relative;
+  left: 380px;
+  top: 100px;
+  cursor: pointer;
+  }
+  
+  .image-interactive:hover{
+      transform: scale(1.1);
+  }
+  
+  .cuadro {
+      width: 350px;
+      height: 280px;
+      background-color: #ffff;
+      position: relative;
+      border-radius: 15px;
+      left: 450px;
+      top: -380px;
+  
+  }
+  
+  .title {
+      font-family : "Josefine Sans", sans-serif;
+      font-size : 15px
+      Text-align: center;
+  }
+  
+  .paragraf {
+      font-family:"Josefine Sans", sans-serif;
+      font-size: 10px
+      justify-content: space-between;
+      text-align: justify;
+  }
+
+
+
+/*....................seccion de Julia...................*/
+
+ /*......creaciones.......*/
+#creaciones{
+    width: 100%;
+    /*height: 1000px;*/
+    background-color:#ffffff;
+    justify-content: center;
+    text-align: center;
+}
+
+.creaciones-about{
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.button-creaciones{
+  width: 120px;
+  height: 40px;
+  background-color:#ffffff;
+  color: rgb(0, 0, 0);
+  border:1px solid rgb(0, 0, 0);
+  display:inline-block;
+  cursor:pointer;
+  font-size:15px;
+  padding:9px 23px;
+  text-shadow:0px 1px 0px #263666;
+  margin-left: 800px;
+ 
+}
+
+.button-creaciones:hover {	
+	background-color:#000000;
+  color: #ffffff;
+}
+
+.button-creaciones:active {
+	position:relative;
+	top:1px;
+}
+
+.grid1{
+    margin: 10px;
+    background-color:#ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.img-text{
+    width: 256px;
+    height: 450px;
+    margin: 5px;  
+    animation: aniampliar 8s linear infinite;
+}
+
+@keyframes aniampliar {
+  0%, 100% {
+    transform: scale(1) translate(0, 0);
+  }
+  50% {
+    transform: scale(1.2) translate(5%, 5%);
+  }
+}
+
+.img-text h4{
+  margin-top: 350px;
+  color: #fff;
+  font-size: 30px;
+  word-break:break-all;
+}
+
+/*......pie de pagina.......*/
+
+.footer{
+    display: flex;
+    width: 100%;
+    background-color: black;
+    padding-top: 50px;
+}
+
+#subfooter2{
+  width: 300px; 
+  height: 200px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 650px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+#subfooter1{
+    height: 200px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    background-color: rgb(0, 0, 0);
+    color: white;   
+}
+
+.logo-footer{
+  margin-top: 100px;
+}
+
+.menu-footer {
+    background-color: #fff;
+    margin-bottom: 2px;
+    font-size: 14px;
+    text-align: left;
+    position: relative;
+    background-color: black;
+}
+ 
+.menu-footer ul {
+    list-style-type: none;
+}
+  
+.menu-footer li {
+    display: inline;
+}
+  
+.menu-footer a {
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-decoration: none; /*borra linea por dfault*/ 
+}
+  
+.menu-footer a:hover {
+    color: #8d8891; 
+}
+
+.menu-footer a:active {
+    color: #6344f0;
+}
+
+.footer-redes{
+    display: flex;
+    justify-content:right;
+    margin-top: 90px;
+}
+
+.img-redes{
+  padding: 10px;
+}
+
+.footer-copy{
+    display: flex;
+    justify-content:right;
+}
+
+
+/*........fin......*/
+
+
+
+
