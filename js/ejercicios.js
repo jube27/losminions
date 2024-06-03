@@ -1,6 +1,6 @@
 
-
-/*  -----Ejercicio 1 --------*/ 
+//alumna: Julia Benavides 
+/*-----Ejercicio 1 --------*/ 
 /*
 años bisiestos
 1980, 1984, 1988, 1992, 1996, 2000, 2004, 2008, 2012, 2016, 
@@ -66,15 +66,29 @@ if(operacion === "+"){
 /*  -----Ejercicio 3 --------*/ 
 
 
-
 let nombre1="cerveza 2.50 soles";
 let nombre2="papitas 5.00 soles";
-let cantidad=3;
+
+console.log("cerveza 2.50 soles");
+console.log("papitas 5.00 soles");
 
 function calcularPrecio (nombre, cantidad){
-
+    var subcadena;
+    var indice1, indice2; 
+    indice1 = nombre.indexOf(" ")+1;
+    console.log(indice1);
+    subcadena1= nombre.substring(indice1, nombre.length);
+    console.log(subcadena1);
+    indice2 = subcadena1.indexOf(" ")+1;
+    subcadena2= subcadena1.substring( 0, indice2);
+    
+    return (+subcadena2)*cantidad;
 }
-
+let cantidad1=2;
+let cantidad2=3;
+console.log("cantidades respectivamente ",cantidad1 ,"  ",cantidad2);
+let suma = calcularPrecio (nombre1, cantidad1) + calcularPrecio (nombre2, cantidad2)
+console.log("precio total "+ suma);
 
 
 
