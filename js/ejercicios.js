@@ -1,33 +1,57 @@
 
-//alumna: Julia Benavides 
-/*-----Ejercicio 1 --------*/ 
-/*
-años bisiestos
+//alumna: Julia Benavides , ejercicios js
+
+/*---------Ejercicio 1 ----------*/ 
+
+/*  años bisiestos
 1980, 1984, 1988, 1992, 1996, 2000, 2004, 2008, 2012, 2016, 
 2020 ,2028, 2032, 2036, 2040, 2044, 2048, 2052, 
 2056, 2060, 2064, 2068, 2072, 2076, 2080, 2084, 2088,
- 2092 y 2096
-*/
-console.log("ejercicio 1 ")
+ 2092 y 2096  */
+
+//.......declaracion de Funciones
+
 function bisiesto(ano) {
-    if ((ano < 1900)||(ano >2100)) return false;
-    return (((ano % 4 == 0) && (ano % 100 != 0)) || (ano % 400 == 0))
-    }
+    if ((+ano < 1900)||(+ano >2100)) return false;
+    return (((+ano % 4 == 0) && (+ano % 100 != 0)) || (+ano % 400 == 0))
+}
 
-    function bisiesto(ano) {
-        if ((ano < 1900)||(ano >2100)) return false;
-        return (((ano % 4 == 0) && (ano % 100 != 0)) || (ano % 400 == 0))
+
+
+
+//.....declaracion de Variables
+
+    let anio1 = document.getElementById('anio'); 
+    const btncomprobar = document.getElementById("btncomprobar")
+    let container =document.getElementById("container");
+    let h2=document.querySelector("h2");
+
+    let h1 = document.createElement("h1");
+    let nh2 = document.createElement("h2")
+    nh2.textContent ="";
+
+    btncomprobar.addEventListener("click", function (event) {
+        event.preventDefault()
+        h1.innerText = " ";
+        if(anio1.value)  {
+            if (bisiesto(anio1.value)){
+                h1.innerText =anio1.value + " es un año bisiesto";
+                container.insertBefore(h1, h2);
+                //console.log(anio1.value, "es bisiesto ")
+            }else{
+                h1.innerText =anio1.value + " No es un año bisiesto ";
+                container.insertBefore(h1,h2);
+                //console.log(anio1.value, "no es bisiesto ")
+            }
+        }else {
+            h1.innerText ="ingrese un año ";
         }
+     
+    })
 
 
-    let anio1 = 2020;
-    if (bisiesto(anio1)){
-        console.log(anio1, "es bisiesto ")
-    }else{
-        console.log(anio1, "no es bisiesto ")
-    }
 
-/*  -----Ejercicio 2 --------*/ 
+/*  --------------- Ejercicio 2 -------------*/ 
 
 console.log("ejercicio 2 ")
 const operacion="%"; // *
@@ -63,7 +87,7 @@ if(operacion === "+"){
 }
 
 
-/*  -----Ejercicio 3 --------*/ 
+/*  --------------------- Ejercicio 3 -------------------*/ 
 
 
 let nombre1="cerveza 2.50 soles";
