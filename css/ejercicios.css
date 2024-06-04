@@ -32,8 +32,8 @@ p{
 }
     
 .ejercicio{ 
-    width:500px ;
-    height: 320px; 
+    width: 600px ;
+    height: 350px; 
     margin-left: 20px;
     margin-bottom: 40px;
     margin-top: 20px;
@@ -55,8 +55,9 @@ p{
     color: #f3d73a;
 }
 
- #container{
-    margin-top: 40px;
+ .container{
+    margin-top: 20px;
+    margin-bottom: 5px;
     color:#bafafb;
     font-style:oblique;
     font-weight: bold;
@@ -72,10 +73,9 @@ p{
 	display:inline-block;
 	cursor:pointer;
 	color:#666666;
-	font-family:Arial;
 	font-size:15px;
 	font-weight:bold;
-	padding:6px 24px;
+	padding:6px 20px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #ffffff;
 }
@@ -90,12 +90,17 @@ p{
 
 .campos{
     background-color: #ffffff;
-    color: #000000;
+    color: #296060;
     text-align: left;
-    padding: 10px;
+    padding: 5px;
 }
 
 .campos h6{
     font-size:15px;
     font-style:oblique;
+}
+
+#container3{
+    color: #358984;
+    text-align: center;
 }
