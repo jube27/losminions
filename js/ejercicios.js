@@ -47,6 +47,31 @@ function bisiesto(ano) {
 
 /*  --------------- Ejercicio 2 -------------*/ 
 
+const x = document.getElementById('num1'); 
+const y = document.getElementById('num2'); 
+const operacion = document.getElementById('selecoper'); 
+const btnoperacion = document.getElementById("btnoperacion")
+let container2 =document.getElementById("container2");
+let p2 = document.createElement("p1");
+let resultadoCalculadora = 0;
+console.log(operacion.value);
+
+btnoperacion.addEventListener("click", function (event) {
+        event.preventDefault()
+        p2.innerText = " ";
+        if(operacion.value === "+"){
+            p2.innerText = +x.value + +y.value;
+           container2.setAttribute("value", p2.innerText);
+            //container2.insertBefore(p2,document.querySelector("h2"));
+            //console.log("resultado suma: ", p2.innerText)
+        }else {
+            console.error("-1")
+        }
+    })
+
+
+
+/*
 console.log("ejercicio 2 ")
 const operacion="%"; // *
 const x=20;
@@ -79,7 +104,7 @@ if(operacion === "+"){
 }else {
     console.error("-1")
 }
-
+*/
 
 /*  --------------------- Ejercicio 3 -------------------*/ 
 
